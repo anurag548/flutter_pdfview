@@ -3,6 +3,7 @@ package io.endigo.plugins.pdfviewflutter;
 import android.content.Context;
 import android.view.View;
 import android.net.Uri;
+import android.graphics.Color;
 
 import io.flutter.plugin.common.BinaryMessenger;
 import io.flutter.plugin.common.MethodCall;
@@ -98,6 +99,7 @@ public class FlutterPDFView implements PlatformView, MethodCallHandler {
 
     @Override
     public View getView() {
+        pdfView.setBackgroundColor(Color.BLACK);
         return pdfView;
     }
 
